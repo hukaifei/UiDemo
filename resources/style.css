@@ -1,0 +1,90 @@
+/* ============================================================
+ * 全局样式表 — UITest
+ * ============================================================ */
+
+/* ---- 主窗口背景 ---- */
+QMainWindow {
+    background-color: #f5f7fa;
+}
+
+/* ---- 标题标签 ---- */
+QLabel#titleLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 6px;
+}
+
+/* ============================================================
+ * CustomWidget — 表头
+ * ============================================================ */
+#HeaderWidget {
+    background-color: #4682B4;
+    border: 1px solid #4682B4;
+}
+
+#HeaderWidget QLabel {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ============================================================
+ * CustomWidget — QListWidget（增益列表）
+ * ============================================================ */
+QListWidget#gainListWidget {
+    background: #ffffff;
+    border: 1px solid #b8c4d1;
+    border-top: none;
+    outline: none;
+}
+
+QListWidget#gainListWidget::item {
+    border-bottom: 1px solid #e6ebf0;
+    padding: 0px;
+}
+
+QListWidget#gainListWidget::item:selected {
+    background-color: #d8ecff;
+    color: black;
+}
+
+QListWidget#gainListWidget::item:hover {
+    background-color: #eef6ff;
+}
+
+/* ============================================================
+ * CustomWidget — 行内控件
+ * ============================================================ */
+
+/* 增益名称标签 */
+QLabel[class="gainLabel"] {
+    font-size: 13px;
+    color: #333;
+}
+
+/* 亮度调节 SpinBox */
+QSpinBox[class="brightnessSpinBox"] {
+    padding: 3px 6px;
+    border: 1px solid #b8c4d1;
+    border-radius: 4px;
+    background: #fff;
+}
+
+/* 确认按钮 */
+QPushButton[class="confirmButton"] {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+QPushButton[class="confirmButton"]:hover {
+    background-color: #5a96c8;
+}
+
+QPushButton[class="confirmButton"]:pressed {
+    background-color: #3a6d99;
+}
