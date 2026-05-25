@@ -3,7 +3,7 @@
 #include <QLabel>
 #include <QStatusBar>
 #include "customwidget.h"
-#include <QDebug>
+
 TestWindow::TestWindow(QWidget *parent)
     : QMainWindow(parent)
 {

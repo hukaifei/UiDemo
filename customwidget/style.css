@@ -1,13 +1,11 @@
 /* ============================================================
- * 全局样式表 — UITest
+ * 全局样式表 — CustomWidgetTest
  * ============================================================ */
 
-/* ---- 主窗口背景 ---- */
 QMainWindow {
     background-color: #f5f7fa;
 }
 
-/* ---- 标题标签 ---- */
 QLabel#titleLabel {
     font-size: 18px;
     font-weight: bold;
@@ -15,9 +13,6 @@ QLabel#titleLabel {
     padding: 6px;
 }
 
-/* ============================================================
- * CustomWidget — 表头
- * ============================================================ */
 #HeaderWidget {
     background-color: #4682B4;
     border: 1px solid #4682B4;
@@ -29,9 +24,6 @@ QLabel#titleLabel {
     font-size: 14px;
 }
 
-/* ============================================================
- * CustomWidget — QListWidget（增益列表）
- * ============================================================ */
 QListWidget#gainListWidget {
     background: #ffffff;
     border: 1px solid #b8c4d1;
@@ -53,17 +45,11 @@ QListWidget#gainListWidget::item:hover {
     background-color: #eef6ff;
 }
 
-/* ============================================================
- * CustomWidget — 行内控件
- * ============================================================ */
-
-/* 增益名称标签 */
 QLabel[class="gainLabel"] {
     font-size: 13px;
     color: #333;
 }
 
-/* 亮度调节 SpinBox */
 QSpinBox[class="brightnessSpinBox"] {
     padding: 3px 6px;
     border: 1px solid #b8c4d1;
@@ -71,7 +57,6 @@ QSpinBox[class="brightnessSpinBox"] {
     background: #fff;
 }
 
-/* 确认按钮 */
 QPushButton[class="confirmButton"] {
     background-color: #4682B4;
     color: white;
