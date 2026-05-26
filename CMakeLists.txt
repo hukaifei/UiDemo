@@ -12,4 +12,5 @@ if(MSVC)
 endif()
 
 add_subdirectory(customwidget)
+add_subdirectory(modelView)
 #add_subdirectory(webengine)

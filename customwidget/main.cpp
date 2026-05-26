@@ -1,7 +1,10 @@
 #include <QApplication>
 #include <QFile>
 #include "TestWindow.h"
-
+#include <QListView>
+#include <QStringListModel>
+#include <QTableView>
+#include <QStandardItemModel>
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
@@ -14,6 +17,5 @@ int main(int argc, char *argv[])
 
     TestWindow window;
     window.show();
-
     return app.exec();
 }
