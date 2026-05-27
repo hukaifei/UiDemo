@@ -13,4 +13,5 @@ endif()
 
 add_subdirectory(customwidget)
 add_subdirectory(modelView)
-#add_subdirectory(webengine)
+add_subdirectory(rangeslider)
+# add_subdirectory(webengine)
