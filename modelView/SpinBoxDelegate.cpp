@@ -12,7 +12,7 @@ QWidget *SpinBoxDelegate::createEditor(QWidget *parent, const QStyleOptionViewIt
     editor->setMinimum(18);
     editor->setMaximum(65);
     return editor;
-}
+} 
 
 void SpinBoxDelegate::setEditorData(QWidget *editor, const QModelIndex &index) const
 {
