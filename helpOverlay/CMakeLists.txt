@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(WizardDemo VERSION 1.0.0 LANGUAGES CXX)
+project(HelpOverlayDemo VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -33,8 +33,8 @@ endif()
 
 set(SOURCES
     main.cpp
-    WizardDemo.cpp
-    WizardDemo.h
+    HelpOverlay.cpp
+    HelpOverlay.h
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -51,11 +51,8 @@ else()
     target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Widgets Qt5::Core Qt5::Gui)
 endif()
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-
-if(WIN32 AND MSVC AND QT_BIN_DIR)
+if(MSVC)
     set_target_properties(${PROJECT_NAME} PROPERTIES
         VS_DEBUGGER_ENVIRONMENT "PATH=${QT_BIN_DIR}$<SEMICOLON>%PATH%"
     )
-    message(STATUS "VS debugger PATH: ${QT_BIN_DIR}")
 endif()

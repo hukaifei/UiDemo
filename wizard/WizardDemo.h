@@ -2,7 +2,6 @@
 #define WIZARDDEMO_H
 
 #include <QWizard>
-
 class QLabel;
 class QLineEdit;
 class QComboBox;

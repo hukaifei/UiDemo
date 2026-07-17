@@ -7,6 +7,7 @@
 #include <QThread>
 #include <QObject>
 
+
 class Util
 {
 public:
