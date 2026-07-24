@@ -99,6 +99,7 @@ private:
 
         QMenu *helpMenu = menuBar()->addMenu(QStringLiteral("帮助(&H)"));
         QAction *tourAction = helpMenu->addAction(QStringLiteral("功能引导"));
+        helpMenu->addAction(QStringLiteral("关于"));
         connect(tourAction, &QAction::triggered, this, &DataManagerWindow::startGuidedTour);
     }
 

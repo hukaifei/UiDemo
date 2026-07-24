@@ -3,7 +3,7 @@
 #include <QLabel>
 #include <QStatusBar>
 #include "customwidget.h"
-
+#include "customTableWidget.h"
 TestWindow::TestWindow(QWidget *parent)
     : QMainWindow(parent)
 {
@@ -22,11 +22,13 @@ TestWindow::TestWindow(QWidget *parent)
     title->setAlignment(Qt::AlignCenter);
     mainLayout->addWidget(title);
 
+    m_table = new GainLightTable(central);
+    mainLayout->addWidget(m_table);
+
     m_widget = new CustomWidget(central);
     mainLayout->addWidget(m_widget);
-
     mainLayout->addStretch();
-
+    m_table->hide();
     connect(m_widget, &CustomWidget::confirmed,
             this, &TestWindow::onConfirmed);
     connect(m_widget, &CustomWidget::brightnessChanged,

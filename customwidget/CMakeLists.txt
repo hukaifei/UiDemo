@@ -37,6 +37,8 @@ set(SOURCES
     TestWindow.h
     customwidget.cpp
     customwidget.h
+    customTableWidget.cpp
+    customTableWidget.h
 )
 
 set(RESOURCES

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 class CustomWidget;
+class GainLightTable;
 
 class TestWindow : public QMainWindow
 {
@@ -18,6 +19,7 @@ private slots:
 
 private:
     CustomWidget *m_widget = nullptr;
+    GainLightTable *m_table = nullptr;
 };
 
 #endif // TESTWINDOW_H
